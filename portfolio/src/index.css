@@ -1,15 +1,16 @@
 body {
   margin: 0;
   font-family: 'Cairo Play', sans-serif;
-  font-family: 'Geologica', sans-serif;
-  font-family: 'IBM Plex Sans', sans-serif;
-  font-family: 'Jost', sans-serif;
-  font-family: 'Righteous', cursive;
+font-family: 'Geologica', sans-serif;
+font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Jost', sans-serif;
+font-family: 'REM', sans-serif;
+font-family: 'Righteous', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace; */
 }

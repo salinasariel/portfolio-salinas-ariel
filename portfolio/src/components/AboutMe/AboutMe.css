@@ -1,0 +1,30 @@
+.content{
+    backdrop-filter: blur(3px);
+    background-color: #DBDFAA;
+    border-radius: 20px;
+    margin-right: 10%;
+    margin-left: 10%;
+    margin-top: 7%;
+    padding: 10px;
+    
+    
+}
+.center-button{
+    display: grid;
+    place-items: center;
+}
+.scale-up-center{animation:scale-up-center 0.4s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+.scale-up-horizontal-center{animation:scale-up-horizontal-center 0.6s} @keyframes scale-up-horizontal-center{0%{transform:scaleX(.2)}100%{transform:scaleX(1)}}
+.backplate{
+    
+    background-color: #b2c890ea;
+    border-radius: 20px;
+   margin-right: 12%;
+    margin-left: 12%;
+    margin-top: 7%;
+    padding: 10px;
+    display: grid;
+    place-items: center;
+    
+}
+

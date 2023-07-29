@@ -9,22 +9,21 @@
     height: 100vh;
   }
 .present {
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0);
+    
+    background-color: #DBDFAA;
     border-radius: 20px;
-    box-shadow: 35px 35px 68px 0px rgba(225, 246, 176, 0.5), inset -10px -10px 16px 0px rgba(225, 246, 176, 0.6), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.527);
-    margin-right: 2%;
+   margin-right: 2%;
     margin-left: 17%;
     width: 90%;
     animation: flotar 3s infinite;
+    height  : 210PX;
     
 }
 .aboutme{
-    backdrop-filter: blur(3px);
-    background-color: rgba(255, 255, 255, 0);
+   
+    background-color: #DBDFAA;
     border-radius: 20px;
-    box-shadow: 35px 35px 68px 0px rgba(225, 246, 176, 0.5), inset -10px -10px 16px 0px rgba(225, 246, 176, 0.6), inset 0px 11px 28px 0px rgba(255, 255, 255, 0.527);
-    margin-right: 10%;
+   margin-right: 10%;
     margin-left: 2%;
 
     padding: 10px;
@@ -65,3 +64,29 @@ h3 {
         transform: translateY(0);
     }
 }
+.interactive-div {
+    background-color: #DBDFAA;
+    border-radius: 20px;
+   margin-right: 2%;
+    margin-left: 17%;
+    width: 90%;
+    animation: flotar 3s infinite;
+    height  : 210PX;
+    
+    background-color: #DBDFAA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+  }
+  
+  .atropos-div {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    padding: 20px;
+    border-radius: 5px;
+    /* Agrega cualquier otro estilo que desees para el elemento */
+  }

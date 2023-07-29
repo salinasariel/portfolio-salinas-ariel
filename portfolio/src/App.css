@@ -1,6 +1,17 @@
+* {
+  font-family: 'Cairo Play', sans-serif;
+  font-family: 'Geologica', sans-serif;
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
+  font-family: 'REM', sans-serif;
+  font-family: 'Righteous', cursive;
+}
+
 body {
-  background: rgb(225, 246, 176);
-  background: radial-gradient(circle, rgba(225, 246, 176, 1) 0%, rgba(231, 246, 197, 1) 54%, rgba(225, 246, 176, 1) 100%);
+  background-color: #F5F0BB;
+
+  /* background: rgb(225, 246, 176);
+  background: radial-gradient(circle, rgba(225, 246, 176, 1) 0%, rgba(231, 246, 197, 1) 54%, rgba(225, 246, 176, 1) 100%); */
 }
 
 .App {
