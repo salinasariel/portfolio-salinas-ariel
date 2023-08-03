@@ -3,6 +3,8 @@ import NavBar from '../NavBar/NavBar'
 import './AboutMe.css'
 import CardEducation from './CardEducation';
 import Button from '@mui/material/Button';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 function AboutMe() {
@@ -38,6 +40,7 @@ function AboutMe() {
                 </div>
                 
             </div>
+            <ToastContainer />
         </div>
     )
 }

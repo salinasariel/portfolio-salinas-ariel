@@ -22,6 +22,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './components/Home/Home.js'
 import AboutMe from './components/AboutMe/AboutMe.js';
 import Proyects from './components/Proyects/Proyects.js';
+import Contact from './components/Contact/Contact';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/aboutme" element={<AboutMe />} />
         <Route path="/proyects" element={<Proyects />} />
+        <Route path="/contact" element={<Contact />} />
         
       </Routes>
     </Router>
