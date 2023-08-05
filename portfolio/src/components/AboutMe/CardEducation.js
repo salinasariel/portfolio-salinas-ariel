@@ -9,7 +9,7 @@ function CardEducation(props) {
     const redirectToCertificate = () => {
 
       if (certificateurl == ""){
-        toast("Available soon!");
+        toast.dark("Available soon!");
       } else{
         window.open(certificateurl, '_blank');
       }
@@ -17,11 +17,11 @@ function CardEducation(props) {
         
     };
   return (
-    <div className='backplate scale-up-horizontal-center'>
+    <div className='backplate '>
         <h3>{props.name}</h3>
         <h5>{props.tittle}</h5> <br></br>
         <p>{props.about}</p>
-        <button  onClick={redirectToCertificate} className='btn btn-outline-secondary btn-sm'>Certificate</button>
+        <button  onClick={redirectToCertificate} className='btn btn-dark btn-sm'>Certificate</button>
         
     </div>
   )

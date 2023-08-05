@@ -1,5 +1,3 @@
-
-
 .onbody {
     display: flex;
     justify-content: center;
@@ -7,27 +5,55 @@
     /* Ajusta el tamaño del contenedor según tus necesidades */
     width: 100%;
     height: 100vh;
-  }
+}
+
 .present {
-    
-    background-color: #DBDFAA;
+    backdrop-filter: blur(8px);
+    background-color: #51557e82;
     border-radius: 20px;
-   margin-right: 2%;
+    margin-right: 2%;
     margin-left: 17%;
     width: 90%;
     animation: flotar 3s infinite;
-    
-    
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+
 }
-.aboutme{
-   
-    background-color: #DBDFAA;
+
+.present:hover {
+    background-color: #8167978d;
+    animation: zoomEffect 0.3s forwards;
+}
+
+.aboutme:hover {
+    background-color: #8167978d;
+    animation: zoomEffect 0.3s forwards;
+}
+
+@keyframes zoomEffect {
+    0% {
+        transform: scale(1);
+        /* Comienza en el tamaño original (sin zoom) */
+    }
+
+    100% {
+        transform: scale(1.1);
+        /* Termina con un zoom del 120% */
+    }
+}
+
+
+.aboutme {
+
+    backdrop-filter: blur(8px);
+    background-color: #51557e82;
     border-radius: 20px;
-   margin-right: 10%;
+    margin-right: 10%;
     margin-left: 2%;
 
     padding: 10px;
-    
+
 }
 
 h1 {
@@ -48,7 +74,19 @@ h3 {
 /* .scale-up-center {
     animation: scale-up-center 0.4s;
 } */
-.scale-up-center{animation:scale-up-center 0.3s; } @keyframes scale-up-center{ 0%{transform:scale(.5)} 100%{transform:scale(1)} }
+.scale-up-center {
+    animation: scale-up-center 0.3s;
+}
+
+@keyframes scale-up-center {
+    0% {
+        transform: scale(.5)
+    }
+
+    100% {
+        transform: scale(1)
+    }
+}
 
 
 @keyframes flotar {
@@ -64,24 +102,25 @@ h3 {
         transform: translateY(7px);
     }
 }
+
 .interactive-div {
     background-color: #DBDFAA;
     border-radius: 20px;
-   margin-right: 2%;
+    margin-right: 2%;
     margin-left: 17%;
     width: 90%;
     animation: flotar 3s infinite;
-    height  : 210PX;
-    
+    height: 210PX;
+
     background-color: #DBDFAA;
     display: flex;
     justify-content: center;
     align-items: center;
-    
 
-  }
-  
-  .atropos-div {
+
+}
+
+.atropos-div {
     font-size: 24px;
     font-weight: bold;
     color: white;
@@ -89,4 +128,26 @@ h3 {
     padding: 20px;
     border-radius: 5px;
     /* Agrega cualquier otro estilo que desees para el elemento */
-  }
+}
+
+.cursor-dot {
+    width: 10px;
+    height:10px;
+    background-color: white;
+}
+
+.cursor-outline {
+    width: 30px;
+    height: 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.529);
+}
+.cursor-dot,
+.cursor-outline{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    z-index: 1;
+    pointer-events: none;
+}

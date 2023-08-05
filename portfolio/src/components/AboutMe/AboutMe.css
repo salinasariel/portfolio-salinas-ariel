@@ -1,14 +1,49 @@
 .content{
-    backdrop-filter: blur(3px);
-    background-color: #DBDFAA;
+    backdrop-filter: blur(8px);
+    background-color: #51557e82;
     border-radius: 20px;
     margin-right: 10%;
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 50px;
+    margin-bottom: 50px;
     padding: 10px;
     
     
 }
+
+  .button-container {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el botón */
+  }
+  
+  .button-cv {
+    backdrop-filter: blur(8px);
+    background-color: #fbf7ff1a;
+    border-radius: 20px;
+    /* Ajusta el tamaño del botón según tus necesidades */
+    width: 200px; /* Por ejemplo, 200px */
+    height: 50px; /* Puedes ajustar la altura según el contenido del botón */
+    /* Estilos adicionales para el texto del botón */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  .button-cv:hover {
+    backdrop-filter: blur(8px);
+    background-color: #816797;
+    border-radius: 20px;
+    /* Ajusta el tamaño del botón según tus necesidades */
+    width: 200px; /* Por ejemplo, 200px */
+    height: 50px; /* Puedes ajustar la altura según el contenido del botón */
+    /* Estilos adicionales para el texto del botón */
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
 .center-button{
     display: grid;
     place-items: center;
@@ -17,14 +52,18 @@
 .scale-up-horizontal-center{animation:scale-up-horizontal-center 0.6s} @keyframes scale-up-horizontal-center{0%{transform:scaleX(.2)}100%{transform:scaleX(1)}}
 .backplate{
     
-    background-color: #b2c890ea;
+    backdrop-filter: blur(8px);
+    background-color: #fbf7ff1a;
     border-radius: 20px;
    margin-right: 12%;
     margin-left: 12%;
-    margin-top: 7%;
+    margin-top: 35px;
+    margin-bottom: 35px;
     padding: 10px;
     display: grid;
     place-items: center;
     
 }
-
+.backplate:hover{
+    animation: zoomEffect 0.3s forwards; 
+}

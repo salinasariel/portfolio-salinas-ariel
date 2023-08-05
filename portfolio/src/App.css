@@ -5,14 +5,54 @@
   font-family: 'Jost', sans-serif;
   font-family: 'REM', sans-serif;
   font-family: 'Righteous', cursive;
+  color: #D6D5A8;
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra */
+  background-color: #57126e; /* Color de fondo de la barra */
+  border-radius: 8px; /* Redondear las esquinas */
+}
+
+/* Pista (track) de la barra de desplazamiento */
+body::-webkit-scrollbar-track {
+  background-color: #261042; /* Color de fondo de la pista */
+}
+
+/* Manija (thumb) de la barra de desplazamiento */
+body::-webkit-scrollbar-thumb {
+  background-color: #743fa9; /* Color de la manija */
+  border-radius: 8px; /* Redondear las esquinas de la manija */
+}
+
+/* Estilos para la barra de desplazamiento en navegadores Firefox */
+/* Puedes personalizar estos estilos si lo deseas */
+/* Estos estilos solo funcionarán en navegadores Firefox con soporte para scrollbar-width y scrollbar-color */
+body {
+  scrollbar-width: thin; /* Ancho de la barra en Firefox */
+  scrollbar-color: #a64dff #e8cfff; /* Color de la manija y la pista en Firefox */
+}
+@media screen and (max-width: 768px) {
+  .app-container {
+    display: none; /* Ocultar todo el contenido de la aplicación */
+  }
+}
+
+/* Estilos para el mensaje informativo que se muestra en dispositivos móviles */
+.message-for-mobile {
+  display: none; /* Inicialmente oculto */
+  margin: 50px;
   
 }
 
-body {
-  background-color: #F5F0BB;
-
-  /* background: rgb(225, 246, 176);
-  background: radial-gradient(circle, rgba(225, 246, 176, 1) 0%, rgba(231, 246, 197, 1) 54%, rgba(225, 246, 176, 1) 100%); */
+@media screen and (max-width: 768px) {
+  .message-for-mobile {
+    display: block; /* Mostrar el mensaje en dispositivos móviles */
+  }
+  *{
+    background-color: #282c34;
+  }
 }
 
 .App {

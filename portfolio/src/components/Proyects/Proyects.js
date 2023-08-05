@@ -15,7 +15,7 @@ function Proyects() {
     
     return (
         <div>
-            <NavBar />
+            
             <div className='content scale-up-center'>
                 <h1>My Proyects 👨‍💻</h1>
                 

@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 .navbar-item:hover{
-    background-color: rgba(197, 249, 148, 0.62);
+    background-color: rgba(197, 249, 148, 0);
     
     border-radius: 10px;
     transition: background-color 0.4s ease;
@@ -32,16 +32,20 @@
     }
 }
 .navbar-link{
-    color: black;
+    color: #D6D5A8;
     text-decoration: none;
 }
 .navbar-style{
-    backdrop-filter: blur(3px); background-color: #dbdfaa65; border-radius: 20px; box-shadow: 0px 35px 68px 0px rgba(225, 246, 176, 0.365), inset 0px -10px 16px 0px rgba(225, 246, 176, 0.6), inset 11px 11px 28px 11px rgb(255, 255, 255);
+    backdrop-filter: blur(8px);
+    background-color: #51557e82;
+    border-radius: 20px;
+    
+    
+    
     height: 50px;
-    margin-top: -10px;
+    
     display: flex;
-    align-items: center;
-    justify-content: center;
+    
     position: fixed;
     top: 25px;/* Ajusta la posición verticalmente según tus necesidades */
     left: 50%;

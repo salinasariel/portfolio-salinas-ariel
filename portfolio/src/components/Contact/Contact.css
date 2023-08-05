@@ -1,11 +1,12 @@
 .imag{
     border-radius: 20px;
-    max-width: 380px;
-
+    width: 380px;
+    opacity: 0.65;
 }
+
 .imag:hover{
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
-    
+    opacity: 1;
     animation: hoverup 0.5s forwards;
 }
 @keyframes hoverup{
