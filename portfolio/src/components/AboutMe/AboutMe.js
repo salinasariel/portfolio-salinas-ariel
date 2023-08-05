@@ -26,6 +26,14 @@ function AboutMe() {
         <div>
             <NavBar />
             <div className='content scale-up-center'>
+            <div className='center-button'>
+                    <Button variant="outlined"  size="small"  onClick={redirectToCV}>Download my CV</Button>
+                </div>
+                
+                
+                
+            </div>
+            <div className='content scale-up-center'>
                 <h1>Skills 🛠️</h1>
                 
                 
@@ -35,9 +43,7 @@ function AboutMe() {
                 <h1>Education 📖</h1>
                 
                 {EducationList}
-                <div className='center-button'>
-                    <Button variant="outlined"  size="small"  onClick={redirectToCV}>Download my CV</Button>
-                </div>
+                
                 
             </div>
             <ToastContainer />

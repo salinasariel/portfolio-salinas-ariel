@@ -16,7 +16,7 @@
     margin-left: 17%;
     width: 90%;
     animation: flotar 3s infinite;
-    height  : 210PX;
+    
     
 }
 .aboutme{
@@ -57,11 +57,11 @@ h3 {
     }
 
     50% {
-        transform: translateY(-5px);
+        transform: translateY(-7px);
     }
 
     100% {
-        transform: translateY(0);
+        transform: translateY(7px);
     }
 }
 .interactive-div {
