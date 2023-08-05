@@ -9,7 +9,7 @@ function CardEducation(props) {
     const redirectToCertificate = () => {
 
       if (certificateurl == ""){
-        toast.dark("Available soon!");
+        toast.dark("⏳ Available soon!");
       } else{
         window.open(certificateurl, '_blank');
       }

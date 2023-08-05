@@ -3,11 +3,13 @@ import NavBar from '../NavBar/NavBar';
 import '../Contact/Contact.css'
 import linkedin from '../../assets/img/linkedin-button.png';
 import github from '../../assets/img/github-button.png';
+import github2 from '../../assets/img/github-access.png';
 import email from '../../assets/img/email-button.png';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import clipboardCopy from 'clipboard-copy';
-
+import { Container, Row, Col } from 'react-bootstrap'; // Assuming you have imported react-bootstrap
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
@@ -32,28 +34,27 @@ function Contact() {
   };
   
   return (
-    <div>
-      
-      
-        
-      <div className='content scale-up-center'>
-        <button onClick={handleButtonLinkedin} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
-          <img className='imag ' src={linkedin} alt="Botón" />
-        </button>
-        <button onClick={handleButtonGithub} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
-          <img className='imag ' src={github} alt="Botón" />
-        </button>
-        <button onClick={handleButtonEmail} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
-          <img className='imag ' src={email} alt="Botón" />
-        </button>
-      </div>
+    <Container className='content scale-up-center'>
+      <Row className='d-flex justify-content-center'>
+        <Col xs='auto'>
+          <button onClick={handleButtonLinkedin} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+            <img className='imag' src={linkedin} alt="Botón" />
+          </button>
+        </Col>
+        <Col xs='auto'>
+          <button onClick={handleButtonGithub} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+            <img className='imag' src={github2} alt="Botón" />
+          </button>
+        </Col>
+        <Col xs='auto'>
+          <button onClick={handleButtonEmail} style={{ border: 'none', background: 'transparent', cursor: 'pointer' }}>
+            <img className='imag' src={email} alt="Botón" />
+          </button>
+        </Col>
+      </Row>
+    </Container>
+  );
+};
 
-      
-
-
-      <ToastContainer />
-    </div>
-  )
-}
 
 export default Contact

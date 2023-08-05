@@ -67,3 +67,7 @@
 .backplate:hover{
     animation: zoomEffect 0.3s forwards; 
 }
+.button-container {
+  display: flex;
+  gap: 4px;
+}

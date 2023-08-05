@@ -1,6 +1,6 @@
 .imag{
     border-radius: 20px;
-    width: 380px;
+    width: 330px;
     opacity: 0.65;
 }
 
@@ -8,6 +8,14 @@
     filter: drop-shadow(0 0 5px rgba(0,0,0,0.7));
     opacity: 1;
     animation: hoverup 0.5s forwards;
+}
+@media screen and (max-width: 768px) {
+  
+  .imag{
+    border-radius: 20px;
+    width: 250px;
+    opacity: 0.65;
+  }
 }
 @keyframes hoverup{
     100% {

@@ -5,6 +5,7 @@ import AboutMe from '../AboutMe/AboutMe';
 import Particle from '../Particle/Particle';
 import Proyects from '../Proyects/Proyects';
 import Contact from '../Contact/Contact';
+import { ToastContainer, toast } from 'react-toastify';
 
 
 
@@ -25,6 +26,7 @@ function Home() {
       cursorDotRef.current && (cursorDotRef.current.style.top = `${posY}px`);
     };
 
+    
     window.addEventListener('mousemove', handleMouseMove);
 
    
@@ -43,7 +45,7 @@ function Home() {
       ></div>
 
       <div className='app-container'>
-        <Navbar />
+        {/* <Navbar /> */}
         <div className='scale-up-center onbody'>
           <div className='present'>
             <h1>Hi! 👋<br></br> My name is Ariel!</h1>
@@ -63,6 +65,8 @@ function Home() {
       <div className='message-for-mobile'>
         <h1>¡Lo sentimos!</h1>
         <h3>Este portfolio no es compatible con dispositivos móviles.</h3>
+        <Contact/>
+        <ToastContainer />
       </div>
     </div>
   );

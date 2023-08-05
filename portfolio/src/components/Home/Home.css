@@ -151,3 +151,14 @@ h3 {
     z-index: 1;
     pointer-events: none;
 }
+
+.interactive-div {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1; /* Asegura que el div esté por encima del fondo */
+    background-color: rgba(255, 0, 0, 0.5); /* Color de fondo para visualización */
+    pointer-events: none; /* Permite que el div no interfiera con otros elementos */
+  }
